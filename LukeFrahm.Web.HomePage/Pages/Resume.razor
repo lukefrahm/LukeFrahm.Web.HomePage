@@ -1,0 +1,817 @@
+﻿@page "/resume"
+@inject NavigationManager NavigationManager
+
+<div class="jumbotron">
+    <h2>Resume</h2>
+    <p>Read more about me and view my professional skills. Also, view my other pages to learn about my hobbies and interests.</p>
+</div>
+
+<div class="row">
+    <div class="col-9">
+        <div class="row justify-content-center">
+            <h3>Career</h3>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-5">
+                <h5><strong>GreatAmerica Financial Services</strong></h5>
+                <p>
+                    February 2017 - Present <br />
+                    Programmer Analyst
+                </p>
+            </div>
+            <div class="col-7 float-right">
+                <p>
+                    I work as a full-stack developer, utilizing .NET, Mulesoft, and Salesforce platforms. Current work is predominantly the
+                    development and maintenance of REST APIs (.NET and Mulesoft) and mobile development in Xamarin. Other work includes
+                    WCF and ASP.NET development. I am also the certified Hyland OnBase developer for the company.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <h5><strong>Hy-Vee Inc.</strong></h5>
+                <p>
+                    September 2005 - February 2017<br />
+                    Assistant Manager
+                </p>
+            </div>
+            <div class="col-7 float-right">
+                <p>
+                    My role as an Assistant Manager at Hy-Vee brought me to all corners of the store. I spent time assisting in managing perishable departments
+                    (such as produce, food court, bakery, meat, and others), running the front end and managing customer relations, product management and
+                    back room receiving, accounting, and writing the schedule for the grocery department (over 250 employees to schedule). I also assisted
+                    in general store management and assisting upper management in running the store.
+                </p>
+            </div>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <div class="border-bottom w-75"></div>
+        </div>
+        <br />
+
+        <div class="row justify-content-center">
+            <h3>Education</h3>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-5">
+                <h5><strong>Kirkwood Community College</strong></h5>
+                <p>August 2009 - May 2017</p>
+            </div>
+            <div class="col-7">
+                <h5>Computer Software Design AAS</h5>
+                <p>
+                    Throughout this program, I learned how to plan, architect, and develop software in multiple languages. The process included a
+                    focus on C# and Java development throughout the semesters, with several other languages like HTML, JavaScript, and PHP being
+                    taught. The final year included a year-long process to work as a class to design, architect, and develop an application in an
+                    agile methodology.
+                </p>
+                <br />
+                <h5>.NET Development Certificate</h5>
+                <p>
+                    This certificate was awarded after 3 semesters of .NET coding, SQL Server and T-SQL development, and data structures classes.
+                </p>
+                <br />
+                <h5>Java Development Certificate</h5>
+                <p>
+                    This certificate was awarded after 3 semesters of Java coding, MySQL development, and data structures classes.
+                </p>
+                <br />
+                <h5>Management AAS</h5>
+                <p>
+                    I learned management and supervision techniques to promote efficiency, synergy, and to maximize worker morale. The program touched
+                    on project management and properly leading teams to help maximize success in the workplace. This course allowed
+                    me to fine-tune my management style while working at Hy-Vee as an Assistant Manager.
+                </p>
+                <br />
+                <h5>Project Management Certificate</h5>
+                <p>
+                    This certificate was awarded after completion of management and supervision courses and several project management courses, including
+                    how to work in an agile environment and using Scrum.
+                </p>
+                <br />
+                <h5>Liberal Arts AA</h5>
+                <p>
+                    This was my first accomplishment in college and served as the starting block for my lifelong passion to pursue learning.
+                </p>
+            </div>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <div class="border-bottom w-75"></div>
+        </div>
+        <br />
+
+        <div class="row justify-content-center">
+            <h3>Accomplishments</h3>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-5">
+                <h5><strong>Personal Website</strong></h5>
+            </div>
+            <div class="col-7 float-right">
+                <p>
+                    I created this website using .NET Blazor WebAssembly. While the vast majority is written in C#, development was also done in JavaScript, CSS
+                    (including Bootstrap 4), and Markdown for documentation. Check out ths site on <a href="https://github.com/lukefrahm/LukeFrahm.Web.HomePage">my GitHub</a>!
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <h5><strong>CognizantSelf</strong></h5>
+            </div>
+            <div class="col-7 float-right">
+                <p>
+                    This mobile application is in active development and uses Xamarin to develop the app for both Android and iOS. It is designed to
+                    provide mental health journaling and check-ins to those who use the app. Future versions will include the ability to email data to
+                    a mental health professional on a schedule to allow them to see what has happened since the last appointment and to provide a history
+                    of progress for the patient. Check out ths app on <a href="https://github.com/lukefrahm/LukeFrahm.Mobile.CognizantSelf">my GitHub</a>!
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <h5><strong>Home Server Network</strong></h5>
+            </div>
+            <div class="col-7 float-right">
+                <p>
+                    I have developed a multi-server home domain using Windows Server operating system, Active Directory, and FreeNAS. For more information,
+                    see my <a href="/technologies">technologies page</a>!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-3 float-right border-left">
+        <div class="row justify-content-center">
+            <h3>Languages</h3>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                C#
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                JSON
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                RAML
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Markdown
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Mule
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Java
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                T-SQL
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                XAML
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                OnBase Unity
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                XML
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                JavaScript
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                jQuery
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                HTML
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Razor
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                ASP.NET
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                PowerShell
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                TypeScript
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                F#
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                MySQL
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                CSS
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                C++
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                PHP
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Swift
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Shell
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Kotlin
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Python
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Visual Basic
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                COBOL
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                PROLOG
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <div class="border-bottom w-75"></div>
+        </div>
+        <br />
+
+        <div class="row justify-content-center">
+            <h3>Development Tools</h3>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Visual Studio
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Firefox
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Chrome
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                SSMS
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Visual Studio Code
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Notepad++
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Anypoint Studio
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Postman
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Microsoft Office
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                IntelliJ
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Netbeans
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Edge
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Android Studio
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Brackets
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                SoapUI
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                OnBase Studio
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Azure Data Studio
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                XCode
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Git Bash
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                MySQL Workbench
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Nano
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                DataGrip
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                WebStorm
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Vim
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <div class="border-bottom w-75"></div>
+        </div>
+        <br />
+
+        <div class="row justify-content-center">
+            <h3>Skills</h3>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Desire to Learn
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                O-O Programming
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                N-Tier
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                MVC
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                SOLID
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Scrum
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Agile
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                MVVM
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Project Management
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Network Engineering
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Functional Programming
+            </div>
+            <div class="col-5">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

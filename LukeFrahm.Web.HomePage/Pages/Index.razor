@@ -1,0 +1,79 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<div class="jumbotron">
+    <h1>Hello, I'm Luke Frahm.</h1>
+    <h2>Welcome to my website!</h2>
+</div>
+<br />
+<div class="">
+    <div class="row col-12">Terminal</div>
+
+    @foreach (string command in CommandScreenView)
+    {
+        <div class="row col-12">@((MarkupString)command)</div>
+    }
+    <input class="col-12" @bind="this.CurrentCommand" @onkeyup="NewCommand_OnKeyUp" />
+</div>
+
+@code {
+    List<string> CommandScreenView { get; set; } = new List<string>();
+    List<string> CommandHistory { get; set; } = new List<string>();
+    string CurrentCommand { get; set; }
+
+    int _commandHistoryIndex = 0;
+
+    void NewCommand_OnKeyUp(KeyboardEventArgs e)
+    {
+        switch (e.Key)
+        {
+            case "Enter":
+                CurrentCommand = Regex.Replace(CurrentCommand, "(<.*?>)|(&.*?;)", string.Empty);
+                CommandScreenView.Add(CurrentCommand);
+                CommandHistory.Add(CurrentCommand);
+                switch (CurrentCommand.ToUpper())
+                {
+                    case "HELP":
+                    case "MAN":
+                        CommandScreenView.Add(Terminal.ConsoleHelpMenu);
+                        break;
+                    case "CLS":
+                    case "CLEAR":
+                        CommandScreenView = new List<string>();
+                        break;
+                    case "ACCOMPLISHMENTS":
+                        NavigationManager.NavigateTo("/Accomplishments");
+                        break;
+                }
+                CurrentCommand = "";
+
+                _commandHistoryIndex = 0;
+                break;
+            case "ArrowUp":
+                {
+                    _commandHistoryIndex++;
+                    if (_commandHistoryIndex >= CommandHistory.Count)
+                    {
+                        _commandHistoryIndex = CommandHistory.Count;
+                    }
+
+                    CurrentCommand = CommandHistory[^_commandHistoryIndex];
+                    break;
+                }
+            case "ArrowDown":
+                {
+                    _commandHistoryIndex--;
+                    if (_commandHistoryIndex <= 0)
+                    {
+                        _commandHistoryIndex = 0;
+                        CurrentCommand = "";
+                    }
+                    else
+                    {
+                        CurrentCommand = CommandHistory[^_commandHistoryIndex];
+                    }
+                    break;
+                }
+        }
+    }
+}
