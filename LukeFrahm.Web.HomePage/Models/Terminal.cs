@@ -12,11 +12,11 @@ namespace LukeFrahm.Web.HomePage.Models
 
         public static string ConsoleHelpMenu =>
             $"COMMANDS{HtmlBreak}" +
-            $"{HtmlTab}nav: Navigates to the selected resource.{HtmlBreak}" +
+            $"{HtmlTab}nav:      Navigates to the selected resource.{HtmlBreak}" +
             $"{HtmlTab}navigate: Navigates to the selected resource.{HtmlBreak}" +
-            $"{HtmlTab}cls: Clears the terminal window.{HtmlBreak}" +
-            $"{HtmlTab}clear: Clears the terminal window.{HtmlBreak}" +
-            $"{HtmlTab}echo: Displays the entered test on screen.{HtmlBreak}";
+            $"{HtmlTab}cls:      Clears the terminal window.{HtmlBreak}" +
+            $"{HtmlTab}clear:    Clears the terminal window.{HtmlBreak}" +
+            $"{HtmlTab}echo:     Displays the entered text on screen.{HtmlBreak}";
 
         public static string HelpNav => CreateCommandHelpString(
                 command:     "nav",

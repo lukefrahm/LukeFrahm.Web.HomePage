@@ -28,21 +28,46 @@
         switch (e.Key)
         {
             case "Enter":
+                if (string.IsNullOrWhiteSpace(CurrentCommand))
+                {
+                    CurrentCommand = "";
+                    return;
+                }
                 CurrentCommand = Regex.Replace(CurrentCommand, "(<.*?>)|(&.*?;)", string.Empty);
                 CommandScreenView.Add(CurrentCommand);
                 CommandHistory.Add(CurrentCommand);
-                switch (CurrentCommand.ToUpper())
+                string[] command = CurrentCommand.ToLower().Split(' ');
+
+                switch (command[0])
                 {
-                    case "HELP":
-                    case "MAN":
+                    case "help":
+                    case "man":
                         CommandScreenView.Add(Terminal.ConsoleHelpMenu);
                         break;
-                    case "CLS":
-                    case "CLEAR":
+                    case "cls":
+                    case "clear":
                         CommandScreenView = new List<string>();
                         break;
-                    case "ACCOMPLISHMENTS":
-                        NavigationManager.NavigateTo("/Accomplishments");
+                    case "nav":
+                        if (command.Length > 1)
+                        {
+                            NavigationManager.NavigateTo($"/{command[1]}");
+                        }
+                        else
+                        {
+                            goto default;
+                        }
+                        break;
+                    case "echo":
+                        string echo = "";
+                        for(int i = 1; i < command.Length; i++)
+                        {
+                            echo += command[i] + " ";
+                        }
+                        CommandScreenView.Add(echo);
+                        break;
+                    default:
+                        CommandScreenView.Add("Command could not be parsed.");
                         break;
                 }
                 CurrentCommand = "";
